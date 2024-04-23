@@ -15,6 +15,8 @@ class ExecutionClient(Protocol):
         :return: None
         """
         ...
+        print(f"Executing buy order: Buying {amount} shares of {product_id}")
+
 
     def sell(self, product_id: str, amount: int):
         """
@@ -24,3 +26,4 @@ class ExecutionClient(Protocol):
         :return: None
         """
         ...
+        print(f"Executing sell order: Selling {amount} shares of {product_id}")
